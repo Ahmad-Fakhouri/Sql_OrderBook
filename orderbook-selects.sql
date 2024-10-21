@@ -98,15 +98,15 @@ Rows=5
 
 SELECT orderid, userid, symbol, orderTime, status
 FROM `Order`
-WHERE status IN ('pending', 'partial fill')
+WHERE status IN ('pending', 'partial_fill')
 ORDER BY orderTime ASC;
 /*
+1	1	WLY	2023-03-15 19:20:35	partial_fill
 3	6	NFLX	2023-03-15 19:21:12	pending
+11	5	SPY	2023-03-15 19:24:21	partial_fill
 12	4	QQQ	2023-03-15 19:24:32	pending
 13	4	QQQ	2023-03-15 19:24:32	pending
-20	3	WLY	2023-03-15 19:51:06	pending
-21	5	A	2023-03-15 20:09:38	pending
-Rows=8
+Rows=10
 */
 
 -- #9: List the 10 most expensive financial products where the productType is stock.
